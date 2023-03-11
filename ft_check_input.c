@@ -24,13 +24,13 @@ void	ft_check_values(int argc, char **argv, t_list **list)
 	while (argv[i])
 	{
 		ft_check_inputs(argv[i]);
-		if (i == 1)
+	/*	if (i == 1)
 			(*list) = ft_lstnew(ft_atoi(argv[i], list), i);
-		else
-			ft_lstadd_back(list, ft_lstnew(ft_atoi(argv[i], list), i - 1));
+		else*/
+		ft_lstadd_back(list, ft_lstnew(ft_atoi(argv[i], list)));
 /*		printf("imprimimos pos: %i y tambien valor %s\n", i, argv[i]);
-		printf("imprimimos la lista resultande de esta vuelta \n");
-		ft_lstprint(*list);*/
+		printf("imprimimos la lista resultande de esta vuelta \n");*/
+		ft_lstprint(*list);
 		i++;
 	}
 	ft_check_duplicate_inputs(list, argc - 1);

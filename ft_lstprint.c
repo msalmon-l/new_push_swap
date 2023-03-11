@@ -28,3 +28,19 @@ void	ft_lstprint(t_list *list)
 	}
 	return ((void) 0);
 }
+
+void	ft_print_values(t_list *list)
+{
+	if (!list)
+	{
+		printf("lista vacia\n");
+		return ;
+	}
+	while (list)
+	{
+		ft_putnbr_fd(list->pos, 1);
+		write(1, "\n", 1);
+		list = list->next;
+	}
+	return ;
+}

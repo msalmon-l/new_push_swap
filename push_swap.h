@@ -21,19 +21,21 @@ typedef struct s_list
 {
 	int		content;
 	int		pos;
-	int		binari;	//esta variable es temporal, la eliminaremos cuando trabajemos a con bitwise para hacer las comparaciones.
+//	int		binari;	//esta variable es temporal, la eliminaremos cuando trabajemos a con bitwise para hacer las comparaciones.
 	struct	s_list	*next;
 }	t_list;
 
 void	ft_free(t_list	**list);
 void	ft_lstprint(t_list *list);
-t_list	*ft_lstnew(int	num, int position); //hecho
+void	ft_print_values(t_list *list);
+t_list	*ft_lstnew(int	num); //hecho
 void	ft_lstadd_front(t_list **lst, t_list *new); //creo que no es necesario
 t_list	*ft_lstlast(t_list	*lst);
 void	ft_lstadd_back(t_list **lst, t_list	*new);
 int		ft_lstsize(t_list *lst);
 void	ft_putnbr_fd(int n, int fd);
 void	ft_put_position(t_list **lst, int num);
+t_list	*ft_max_value(t_list **lst);
 
 int		ft_atoi(const char *str, t_list **lst);
 void	ft_error();

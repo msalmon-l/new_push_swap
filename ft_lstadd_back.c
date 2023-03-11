@@ -19,15 +19,18 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 	lista = NULL;
 	if (!new)
 		return ((void)0);
-	if (!(*lst))
-		(*lst) = new;
+	if ((*lst) == NULL)
+	{
+		*lst = new;
+		printf("el valor de lst es %i y deberia ser %i\n", (*lst)->content, new->content);
+	}
 	else
 	{
 		lista = ft_lstlast(*lst);
 		lista->next = new;
 	}
 	
-	return ((void)0);
+	//return ((void)0);
 }
 
 

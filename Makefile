@@ -10,7 +10,7 @@
 #                                                                              #
 # **************************************************************************** #
 
-CC		= gcc
+CC		= clang
 RM		= rm -f
 CFLAGS	= -Wall -Wextra 
 
@@ -19,7 +19,7 @@ CFLAGS	= -Wall -Wextra
 
 SRCS	= ft_atoi.c ft_error.c ft_swap.c ft_check_input.c main.c ft_go_to_order.c \
 		  ft_movement_operations.c ft_lstadd_back.c ft_lstlast.c ft_lstnew.c ft_lstsize.c \
-		  ft_free.c ft_lstprint.c ft_putnbr_fd.c ft_lstadd_front.c
+		  ft_free.c ft_lstprint.c ft_putnbr_fd.c ft_lstadd_front.c ft_put_position.c
 
 OBJS	= ${SRCS:.c=.o}
 

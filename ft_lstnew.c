@@ -12,15 +12,15 @@
 
 #include "push_swap.h"
 
-t_list	*ft_lstnew(int num, int position)
+t_list	*ft_lstnew(int num)
 {
 	t_list	*nuevo;
 
-	if (!num || !position)
+	if (!num)
 		return (0);
 	nuevo = malloc(sizeof(t_list));
 	nuevo->content = num;
-	nuevo->pos = position;
+	nuevo->pos = 0;
 	return (nuevo);
 }
 
