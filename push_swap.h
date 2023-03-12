@@ -55,4 +55,8 @@ void	ft_order_three(t_list **lst, int num);
 void	ft_order_five(t_list **lst_a, t_list **lst_b, int num);
 //herramienta de algorithmo de 5
 void	ft_search_min(t_list **lst_a, t_list **lst_b);
+//ordenar todos:
+void	ft_order all(t_list **lst_a, t_list **lst_b, number);
+int	ft_get_round(int number);
+//void	ft__(t_list **lst_a, t_list lst_b, int number, int position); //in this function we make compare if the bit position indicate is 1 if it is move at second block and then moves to firts block back.
 #endif

@@ -19,6 +19,8 @@ void	ft_go_to_order(t_list **lst, t_list **lst_b, int number)
 		ft_order_three(lst, number);
 	else if (number < 6)
 		ft_order_five(lst, lst_b, number);
+	else
+		ft_order_all(lst, lst_b, number);
 }
 
 void	ft_order_three(t_list **lst, int num)
@@ -72,3 +74,51 @@ void	ft_search_min(t_list **lst_a, t_list **lst_b)
 	ft_push_option(lst_a, lst_b, 'a');
 	return ;
 }
+
+void	ft_order_all(t_list **lst_a, t_list **lst_b, int number)
+{
+	int	round;
+	int	i;
+
+	if (!lst_a)
+		return ;
+	round = ft_get_round(number);
+	i = 0;
+	while (i < round)
+	{
+		//ft_(lst_a, lst_b, num, i); start to do this function
+		i++;
+	}
+}
+
+
+
+int	ft_get_round(int number)
+{
+	int i;
+
+	i = 1;
+	while (number >= 2)
+	{
+		number /= 2;
+		i++;
+	}
+	printf("the round number is: %i\n", i);
+	return (i);
+}
+/*
+int main()
+{
+	int i;
+
+	i = ft_get_round(3);
+	i = ft_get_round(8);
+	i = ft_get_round(16);
+	i = ft_get_round(32);
+	i = ft_get_round(64);
+	i = ft_get_round(100);
+	i = ft_get_round(200);
+	i = ft_get_round(41);
+	return 0;
+}
+*/

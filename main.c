@@ -36,8 +36,8 @@ int	main(int argc, char **argv)
 	if (order == 1)
 		return (0);
 	ft_go_to_order(&pila_a, &pila_b, argc - 1);
-	ft_lstprint(pila_b);
-	printf("fin de la prueba de la funcion, esta ordenado =%i\n", order);
+//	ft_lstprint(pila_b);
+//	printf("fin de la prueba de la funcion, esta ordenado =%i\n", order);
 	ft_print_values(pila_a);
 	return (0);
 
